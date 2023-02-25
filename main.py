@@ -48,7 +48,3 @@ def hi(name:str , reply:str):
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
 
-@app.post("/login")
-def login(user: User):
-    return {"echo":user}
-
