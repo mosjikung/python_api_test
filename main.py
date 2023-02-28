@@ -13,7 +13,7 @@ class User(BaseModel):
     age:int
     email:Optional[str] = None
 
-    class config:
+    class Config:
         orm_mode=True
 
 
