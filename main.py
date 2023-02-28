@@ -22,7 +22,7 @@ db=SessionLocal()
 
 @app.get("/user",response_model=List[User],status_code=200)
 def get_all_user():
-    user=db.query(models.User).All()
+    user=db.query(models.User).all()
     return user
 
 
